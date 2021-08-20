@@ -1,4 +1,4 @@
-# vite-css-modules
+# vite-mpa-tailwind-css-bundle-size
 
 ```
 $ npm run build
