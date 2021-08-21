@@ -24,3 +24,9 @@ dist/assets/vendor.3d9c5d49.js                   127.59 KiB / brotli: 36.08 KiB
 As shown above, `app1.css` and `app2.css` have the same size.
 
 Even though `app2` only have a few class usage...😢
+
+As a work-around, you need to overwrite bundled assets by Vite like this to optimize.
+
+```
+NODE_ENV=production ./node_modules/.bin/tailwindcss -i ./app2/style.css -o ./dist/assets/app2.74ba676f.css --minify --purge ./app2/**/*.jsx
+```
